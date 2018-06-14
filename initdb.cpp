@@ -15,7 +15,7 @@ bool initdb::testConnection()
 
     mysql_init(&mysql);
 
-    dbConnection = mysql_real_connect(&mysql,"scottcullins.com","cs3505_dropTable","password123","cs3505_dropTable",3306,0,0);
+    dbConnection = mysql_real_connect(&mysql,"<redacted>","cs3505_dropTable","<redacted>","cs3505_dropTable",3306,0,0);
 
     if (dbConnection == NULL) // if the connection errored, print the sql error
     {
